@@ -1,9 +1,4 @@
-import React from "react"
-
-import { Button } from "@/components/ui/button"
-import { ArrowLink } from "@/components/common"
-
-import { ProjectCard } from "./project-card"
+import { ArrowLink, ProjectCard } from "@/components/common"
 
 export function Projects() {
   return (
@@ -14,10 +9,12 @@ export function Projects() {
         </h2>
         <ArrowLink href="/projects" name="See all projects" />
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <ProjectCard
           title="Project title"
           description="project desrcrpitospno fsdnfndsf jsdnojf sdnf"
+          githubLink="#"
+          websiteLink="#"
         />
         <ProjectCard
           title="Project title"

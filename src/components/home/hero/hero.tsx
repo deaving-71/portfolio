@@ -9,7 +9,7 @@ export function Hero() {
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight text-foreground lg:text-5xl">
             DeaViNG
           </h1>
-          <h2 className="flex items-center gap-2 leading-7 text-muted-foreground">
+          <h2 className="flex flex-wrap items-center gap-2 leading-7 text-muted-foreground">
             {tags.map((tag, idx) => (
               <>
                 <span key={tag + idx}>{tag}</span>
