@@ -2,12 +2,14 @@ import Link from "next/link"
 
 import { Icons } from "@/components/icons"
 
+import { Badge } from "../ui/badge"
 import { Button } from "../ui/button"
 
 type ProjectCardProps = {
   title: string
   description: string
   Icon?: React.ElementType<any, keyof JSX.IntrinsicElements>
+  techstack: string[]
   githubLink?: string
   websiteLink?: string
 }
@@ -16,6 +18,7 @@ export function ProjectCard({
   title,
   description,
   Icon = Icons.global,
+  techstack,
   githubLink,
   websiteLink,
 }: ProjectCardProps) {
@@ -25,13 +28,18 @@ export function ProjectCard({
         <span className="inline-grid size-11 place-content-center rounded-md bg-secondary">
           {<Icon size={28} />}
         </span>
-        <div>
+        <div className="space-y-3">
           <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
             {title}
           </h3>
-          <p className="leading-7 text-muted-foreground [&:not(:first-child)]:mt-6">
-            {description}
-          </p>
+          <p className="leading-7 text-muted-foreground">{description}</p>
+          <ul className="flex items-center gap-1">
+            {techstack.map((tech, idx) => (
+              <li key={tech + idx}>
+                <Badge>{tech}</Badge>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className="bottom-4 right-4 flex items-center justify-end gap-2 md:absolute md:z-10 md:hidden md:justify-normal md:group-hover:flex">

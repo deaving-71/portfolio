@@ -2,6 +2,8 @@ import React from "react"
 
 import { ArrowLink, ProjectCard } from "@/components/common"
 
+import { projects } from ".."
+
 export function ClientProjects() {
   return (
     <section aria-labelledby="projects" className=" py-8">
@@ -12,22 +14,9 @@ export function ClientProjects() {
         <ArrowLink href="/projects" name="See all projects" />
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <ProjectCard
-          title="Project title"
-          description="project desrcrpitospno fsdnfndsf jsdnojf sdnf"
-        />
-        <ProjectCard
-          title="Project title"
-          description="project desrcrpitospno fsdnfndsf jsdnojf sdnf"
-        />
-        <ProjectCard
-          title="Project title"
-          description="project desrcrpitospno fsdnfndsf jsdnojf sdnf"
-        />
-        <ProjectCard
-          title="Project title"
-          description="project desrcrpitospno fsdnfndsf jsdnojf sdnf"
-        />
+        {projects.map((project, idx) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
       </div>
     </section>
   )
