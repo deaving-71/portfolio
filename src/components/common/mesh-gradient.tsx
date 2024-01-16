@@ -1,10 +1,11 @@
 export function MeshGradient() {
   return (
-    <div
-      className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-      aria-hidden="true"
-    >
-      <div className="mesh relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
+    <div className="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2">
+      <div className="opacity-20">
+        <div className="absolute -left-24 -z-10 size-[200px] rounded-full bg-gradient-to-br from-blue-400 to-purple-800 blur-[8rem] sm:size-[350px] lg:size-[500px] "></div>
+        <div className="absolute -right-24 -z-10 size-[200px] rounded-full bg-gradient-to-tl from-blue-700 to-purple-400 blur-[8rem] sm:size-[350px] lg:size-[500px]"></div>
+        <div className="absolute -right-48 top-9 -z-10 size-[200px] rounded-full bg-gradient-to-tl from-blue-600 to-purple-800 blur-[8rem] sm:size-[350px] lg:size-[500px]"></div>
+      </div>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import { Sen } from "next/font/google"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Container, Header } from "@/components/common"
+import { MeshGradient } from "@/components/common/mesh-gradient"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const font = Sen({ subsets: ["latin"] })
@@ -82,7 +83,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <Container>
             <Header />
-            {children}
+            <div className="relative">
+              {children}
+              <MeshGradient />
+            </div>
           </Container>
         </ThemeProvider>
       </body>
