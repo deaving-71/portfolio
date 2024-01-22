@@ -33,7 +33,7 @@ export function ProjectCard({
             {title}
           </h3>
           <p className="leading-7 text-muted-foreground">{description}</p>
-          <ul className="flex items-center gap-1">
+          <ul className="flex flex-wrap items-center gap-1">
             {techstack.map((tech, idx) => (
               <li key={tech + idx}>
                 <Badge>{tech}</Badge>
@@ -51,7 +51,13 @@ export function ProjectCard({
               size="icon"
               asChild
             >
-              <Link href={websiteLink}>{<Icons.global />}</Link>
+              <Link
+                href={websiteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {<Icons.global />}
+              </Link>
             </Button>
           )}
         </span>
@@ -63,7 +69,9 @@ export function ProjectCard({
               size="icon"
               asChild
             >
-              <Link href={githubLink}>{<Icons.github />}</Link>
+              <Link href={githubLink} target="_blank" rel="noopener noreferrer">
+                {<Icons.github />}
+              </Link>
             </Button>
           )}
         </span>

@@ -1,30 +1,8 @@
+import { myProjects } from "@/config"
+
 import { ArrowLink, ProjectCard } from "@/components/common"
 import { Section } from "@/components/common/section"
 
-export const projects = [
-  {
-    title: "Project title",
-    description: "project desrcrpitospno fsdnfndsf jsdnojf sdnf",
-    techstack: ["HTML", "CSS"],
-    githubLink: "#",
-    websiteLink: "#",
-  },
-  {
-    title: "Project title",
-    description: "project desrcrpitospno fsdnfndsf jsdnojf sdnf",
-    techstack: ["HTML", "CSS"],
-  },
-  {
-    title: "Project title",
-    description: "project desrcrpitospno fsdnfndsf jsdnojf sdnf",
-    techstack: ["HTML", "CSS"],
-  },
-  {
-    title: "Project title",
-    description: "project desrcrpitospno fsdnfndsf jsdnojf sdnf",
-    techstack: ["HTML", "CSS"],
-  },
-]
 export function Projects() {
   return (
     <Section aria-labelledby="projects">
@@ -35,9 +13,11 @@ export function Projects() {
         <ArrowLink href="/projects" name="See all projects" />
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {projects.map((project, idx) => (
-          <ProjectCard key={project.title + idx} {...project} />
-        ))}
+        {myProjects.map((project, idx) => {
+          if (idx >= 4) return
+
+          return <ProjectCard key={project.title + idx} {...project} />
+        })}
       </div>
     </Section>
   )

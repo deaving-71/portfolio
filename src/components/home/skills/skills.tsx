@@ -1,17 +1,8 @@
+import { skills } from "@/config"
+
 import { Section } from "@/components/common/section"
 
 import SkillIcon from "./skill-icon"
-
-const skills = [
-  {
-    category: "FrontEnd",
-    techstack: [""],
-  },
-  {
-    category: "BackEnd",
-    techstack: [""],
-  },
-]
 
 export function Skills() {
   return (
@@ -25,8 +16,10 @@ export function Skills() {
             {skill.category}
           </h3>
           <div className="flex flex-wrap gap-4">
-            {skill.techstack.map((tech, idx) => (
-              <SkillIcon key={tech + idx} />
+            {skill.techs.map((tech, idx) => (
+              <SkillIcon key={tech.tech + idx}>
+                <tech.icon size={24} />
+              </SkillIcon>
             ))}
           </div>
         </div>

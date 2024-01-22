@@ -1,8 +1,6 @@
-import React from "react"
+import { clientProjects } from "@/config"
 
 import { ArrowLink, ProjectCard } from "@/components/common"
-
-import { projects } from ".."
 
 export function ClientProjects() {
   return (
@@ -14,9 +12,10 @@ export function ClientProjects() {
         <ArrowLink href="/projects" name="See all projects" />
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {projects.map((project, idx) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
+        {clientProjects.map((project, idx) => {
+          if (idx >= 4) return
+          return <ProjectCard key={project.title} {...project} />
+        })}
       </div>
     </section>
   )
