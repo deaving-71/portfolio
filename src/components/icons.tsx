@@ -9,7 +9,7 @@ import {
 } from "lucide-react"
 import { DiMongodb, DiMysql } from "react-icons/di"
 import { FaCss3, FaDiscord, FaHtml5, FaReact } from "react-icons/fa"
-import { FaGolang, FaXTwitter } from "react-icons/fa6"
+import { FaGolang, FaNodeJs, FaXTwitter } from "react-icons/fa6"
 import { IoLogoJavascript } from "react-icons/io5"
 import {
   SiAstro,
@@ -48,6 +48,7 @@ const icons = {
   postgresql: SiPostgresql,
   mongodb: DiMongodb,
   golang: FaGolang,
+  nodejs: FaNodeJs,
   global: Globe,
   link: Link,
   arrowRight: ArrowRight,

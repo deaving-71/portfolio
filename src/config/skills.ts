@@ -23,7 +23,7 @@ const skills: Skill[] = [
   {
     category: "Backend",
     techs: [
-      { tech: "Node.js", icon: Icons.react },
+      { tech: "Node.js", icon: Icons.nodejs },
       { tech: "Express", icon: Icons.express },
       { tech: "Fastify", icon: Icons.fastify },
       { tech: "Socket.io", icon: Icons.socketio },

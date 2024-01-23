@@ -64,7 +64,7 @@ const clientProjects: Project[] = [
     title: "B4SMM",
     description: "B4SMM is a social media marketing website.",
     techstack: ["HTML", "TailwindCSS", "JavaScript", "Twig", "Php", "Laravel"],
-    websiteLink: "https://b4smm.com",
+    websiteLink: "https://b4smm.com/en",
   },
   {
     title: "TechSpecs",

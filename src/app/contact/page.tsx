@@ -1,5 +1,4 @@
 import { Section } from "@/components/common/section"
-import { ContactForm } from "@/components/hire-me"
 import { SocialIcons } from "@/components/home"
 
 export default function HireMe() {
@@ -15,7 +14,7 @@ export default function HireMe() {
           </h2>
           <SocialIcons />
         </div>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </Section>
     </main>
   )
