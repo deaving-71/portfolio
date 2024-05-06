@@ -42,7 +42,7 @@ export function ProjectCard({
           </ul>
         </div>
       </div>
-      <div className="bottom-4 right-4 flex items-center justify-end gap-2 md:absolute md:z-10 md:hidden md:justify-normal md:group-hover:flex">
+      <div className="bottom-4 right-4 flex items-center justify-end gap-2 pt-4 md:absolute md:z-10 md:hidden md:justify-normal md:group-hover:flex">
         <span>
           {websiteLink && (
             <Button

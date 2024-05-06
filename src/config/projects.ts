@@ -2,54 +2,59 @@ import { Project } from "@/types/types"
 
 const myProjects: Project[] = [
   {
-    title: "Simple Tic Tac Toe game",
+    title: "Nextjs Blog",
+    description: "A blog website with a custom cms build with nextjs.",
+    techstack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Express",
+      "PostgreSQL",
+      "DrizzleORM",
+    ],
+    websiteLink: "https://nextjs-blog-ecru-six.vercel.app",
+    githubLink: "https://github.com/deaving-71/nextjs-blog",
+  },
+  {
+    title: "Noire Chat",
+    description:
+      "A chat app that is similar to discord where you can add friends and create channels to chat with others.",
+    techstack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Adonis.js",
+      "LucidORM",
+      "PostgreSQL",
+      "Socket.io",
+    ],
+    websiteLink: "https://noire-chat.vercel.app",
+    githubLink: "https://github.com/deaving-71/noire-chat",
+  },
+  {
+    title: "Filament Ecommerce",
+    description:
+      "An ecommerce website built using Laravel FilamentPHP and Inertia.js.",
+    techstack: [
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "Inertia.js",
+      "Laravel",
+      "EloquentORM",
+      "MySQL",
+    ],
+    websiteLink: "https://noire-chat.vercel.app",
+    githubLink: "https://github.com/deaving-71/noire-chat",
+  },
+  {
+    title: "Tic Tac Toe",
     description:
       "A simple tic tac toe game made with vite react and websockets.",
-    techstack: ["React", "TailwindCSS", "TypeScript", "Vite", "Node.js"],
+    techstack: ["React", "TailwindCSS", "TypeScript", "Vite", "Socket.io"],
     githubLink: "https://github.com/deaving-71/simple-tic-tac-toe",
-  },
-  {
-    title: "Chat App",
-    description:
-      "A discord like chat app. includes features like adding other users as friends, creating private group chats and inviting people to join them.",
-    techstack: [
-      "React",
-      "TailwindCSS",
-      "TypeScript",
-      "Next.js",
-      "Fastify",
-      "PostgreSQL",
-      "Prisma.js",
-    ],
-    githubLink: "https://github.com/deaving-71/simple-tic-tac-toe",
-  },
-  {
-    title: "Blog with a Custom CMS",
-    description:
-      "A blog wordpress like template, with a cms built with TipTap API for the wysiwyg text editor.",
-    techstack: [
-      "React",
-      "TailwindCSS",
-      "TypeScript",
-      "Next.js",
-      "Mongoose",
-      "MongoDB",
-    ],
-    githubLink: "https://github.com/deaving-71/next-blog",
-  },
-  {
-    title: "Socket.io Chat App",
-    description: "A chat app I built in order to learn socket.io",
-    techstack: ["React", "TailwindCSS", "TypeScript", "Socket.io", "Node.js"],
-    githubLink: "https://github.com/deaving-71/socket.io-chat-example",
-  },
-  {
-    title: "Digiency Landing Page",
-    description:
-      "My first time trying out Next.js v13.0 and practiving TailwindCSS by turning a community figma design into a webpage.",
-    techstack: ["React", "TailwindCSS", "Next.js"],
-    githubLink: "https://github.com/deaving-71/digiency-landing-page",
-    websiteLink: "https://digiency-landing-page.vercel.app",
   },
 ]
 

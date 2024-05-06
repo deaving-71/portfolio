@@ -49,3 +49,7 @@ export type Tech =
   | "DrizzleORM"
   | "Socket.io"
   | "AI"
+  | "Adonis.js"
+  | "LucidORM"
+  | "Inertia.js"
+  | "EloquentORM"
