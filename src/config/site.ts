@@ -15,5 +15,5 @@ export const siteConfig: SiteConfig = {
   links: {
     github: "https://github.com/deaving-71/portfolio",
   },
-  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.jpg`,
+  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.jpeg`,
 }
