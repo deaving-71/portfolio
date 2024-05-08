@@ -46,8 +46,7 @@ const myProjects: Project[] = [
       "EloquentORM",
       "MySQL",
     ],
-    websiteLink: "https://noire-chat.vercel.app",
-    githubLink: "https://github.com/deaving-71/noire-chat",
+    githubLink: "https://github.com/deaving-71/Ecommerce-Filament",
   },
   {
     title: "Tic Tac Toe",
