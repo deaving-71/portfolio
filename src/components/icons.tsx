@@ -1,5 +1,6 @@
 import {
   ArrowRight,
+  ArrowUpRight,
   Command,
   Github,
   Globe,
@@ -52,6 +53,7 @@ const icons = {
   global: Globe,
   link: Link,
   arrowRight: ArrowRight,
+  ExternalLink: ArrowUpRight,
 }
 
 export const Icons: IconsType = icons
