@@ -13,7 +13,7 @@ const About = {
     },
     {
       name: "Discord",
-      link: "https://discord.com/users/deaving_dev",
+      link: "https://discord.com/users/282257126464684033",
       Icon: Icons.discord,
     },
     {
